@@ -15,6 +15,16 @@ basic.forever(function () {
         basic.showArrow(ArrowNames.West)
         basic.pause(100)
         basic.showArrow(ArrowNames.NorthWest)
+        basic.pause(100)
+        basic.showArrow(ArrowNames.North)
+        basic.pause(100)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
     }
     while (input.buttonIsPressed(Button.B)) {
         basic.showArrow(ArrowNames.North)
@@ -32,5 +42,15 @@ basic.forever(function () {
         basic.showArrow(ArrowNames.East)
         basic.pause(100)
         basic.showArrow(ArrowNames.NorthEast)
+        basic.pause(100)
+        basic.showArrow(ArrowNames.North)
+        basic.pause(100)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
     }
 })
